@@ -1,0 +1,11 @@
+{
+  "test1": {
+    "network": "10.112.61.0/24",
+    "ports": "common",
+    "timeout": "1.0",
+    "workers": "200",
+    "reverse_dns": true,
+    "banner_grab": true,
+    "vuln_check": true
+  }
+}

@@ -1,0 +1,26 @@
+# # Enhanced LAN Scanner Pro - Requirements
+# # Core dependencies
+# #tkinter  # Usually comes with Python
+# #socket   # Built-in module
+# threading  # Built-in module
+# csv      # Built-in module
+# json     # Built-in module
+# datetime # Built-in module
+# collections # Built-in module
+# concurrent.futures # Built-in module
+
+# # Optional dependencies for enhanced features
+# matplotlib>=3.5.0  # For charts and visualizations
+# ping3>=4.0.0      # For ping functionality
+# python-nmap>=0.7.1 # For advanced network scanning
+
+# # Installation commands:
+# # pip install matplotlib
+# # pip install ping3
+# # pip install python-nmap
+
+# # Note: Some features will work without optional dependencies
+# # The scanner will gracefully degrade functionality
+matplotlib>=3.5.0
+ping3>=4.0.0
+python-nmap>=0.7.1

@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAN Scanner Pro - Network Discovery & Security Tool</title>
+    <meta name="description" content="Professional network discovery and security assessment tool with multi-threaded scanning, banner grabbing, and real-time visualization.">
+    <meta name="keywords" content="network scanner, port scanner, security tool, LAN discovery, network security, Python, tkinter">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-network-wired"></i>
+                    <h1>LAN Scanner Pro</h1>
+                </div>
+                <nav class="nav">
+                    <a href="#features">Features</a>
+                    <a href="#technical">Technical Details</a>
+                    <a href="#screenshots">Screenshots</a>
+                    <a href="#download">Download</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Advanced Network Discovery & Security Assessment Tool</h2>
+                <p>Professional-grade LAN scanner with modern UI, real-time statistics, and comprehensive security analysis</p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary">
+                        <i class="fas fa-download"></i> Download Now
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="app-preview">
+                    <div class="window-bar">
+                        <div class="window-controls">
+                            <span class="control close"></span>
+                            <span class="control minimize"></span>
+                            <span class="control maximize"></span>
+                        </div>
+                        <span class="window-title">LAN Scanner Pro</span>
+                    </div>
+                    <div class="app-content">
+                        <div class="scanning-animation">
+                            <div class="network-node central"></div>
+                            <div class="network-node node1"></div>
+                            <div class="network-node node2"></div>
+                            <div class="network-node node3"></div>
+                            <div class="network-node node4"></div>
+                            <div class="scan-wave"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview Section -->
+    <section class="project-overview">
+        <div class="container">
+            <div class="overview-content">
+                <div class="project-header">
+                    <h2>LAN Scanner Pro – Enhanced Network Discovery & Security Tool</h2>
+                    <div class="project-badge">
+                        <span class="badge-text">Professional Network Security Solution</span>
+                    </div>
+                </div>
+                
+                <div class="overview-grid">
+                    <div class="overview-section">
+                        <h3><i class="fas fa-info-circle"></i> Introduction</h3>
+                        <p>Today, monitoring and analysis of the devices connected over a LAN are indispensable parts of security, performance, and maintenance in modern computer networks. Traditional command-line tools such as ping, nmap, and netstat require technical expertise and are not user-friendly for end-users.</p>
+                        
+                        <p>LAN Scanner Pro is an advanced, Python-based desktop application that provides a user-friendly interface to simplify LAN scanning. Its feature list includes support for multi-threaded scans, port detection, device fingerprinting, topology visualization, and vulnerability hints, all with reports that can be exported using Tkinter.</p>
+                        
+                        <div class="target-audience">
+                            <h4>The system is ideal for:</h4>
+                            <ul class="audience-list">
+                                <li><i class="fas fa-user-tie"></i> Network administrators</li>
+                                <li><i class="fas fa-shield-alt"></i> Cybersecurity students</li>
+                                <li><i class="fas fa-laptop-code"></i> IT professionals</li>
+                                <li><i class="fas fa-graduation-cap"></i> Enthusiasts learning network scanning & security</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="overview-section">
+                        <h3><i class="fas fa-bullseye"></i> Purpose of the Project</h3>
+                        <p>The primary purpose of LAN Scanner Pro is to provide a fast, efficient, and user-friendly network scanning tool that eliminates the complexity of command-line utilities.</p>
+                        
+                        <div class="purpose-goals">
+                            <h4>It aims to:</h4>
+                            <ul class="goals-list">
+                                <li><i class="fas fa-search"></i> Automate device discovery within a LAN</li>
+                                <li><i class="fas fa-info"></i> Provide more information than basic scanning tools</li>
+                                <li><i class="fas fa-shield-virus"></i> Offer security insights based on detected services</li>
+                                <li><i class="fas fa-chart-network"></i> Support visual analysis using topology diagrams and graphs</li>
+                                <li><i class="fas fa-file-export"></i> Enable administrators to export detailed scan reports</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="objectives-section">
+                    <h3><i class="fas fa-target"></i> Project Objectives</h3>
+                    <div class="objectives-grid">
+                        <div class="objective-card">
+                            <div class="objective-icon">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                            <h4>User-Friendly Design</h4>
+                            <p>Simplify LAN scanning for beginners and professionals with intuitive interface</p>
+                        </div>
+                        
+                        <div class="objective-card">
+                            <div class="objective-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h4>Real-Time Detection</h4>
+                            <p>Detect active hosts and open ports in real time with live progress tracking</p>
+                        </div>
+                        
+                        <div class="objective-card">
+                            <div class="objective-icon">
+                                <i class="fas fa-fingerprint"></i>
+                            </div>
+                            <h4>Service Identification</h4>
+                            <p>Identify running services using banner grabbing and DNS lookup techniques</p>
+                        </div>
+                        
+                        <div class="objective-card">
+                            <div class="objective-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <h4>Security Insights</h4>
+                            <p>Provide basic vulnerability hints for security improvement and risk assessment</p>
+                        </div>
+                        
+                        <div class="objective-card">
+                            <div class="objective-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h4>Visual Reports</h4>
+                            <p>Generate visual reports, topology maps, and statistical charts for analysis</p>
+                        </div>
+                        
+                        <div class="objective-card">
+                            <div class="objective-icon">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            <h4>High Performance</h4>
+                            <p>Offer fast multi-threaded scanning for improved performance and efficiency</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Network Discovery</h3>
+                    <p>Comprehensive network scanning with CIDR notation support and automatic network detection</p>
+                    <div class="tech-details">
+                        <span class="tech-tag">ipaddress</span>
+                        <span class="tech-tag">socket</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Port Scanning</h3>
+                    <p>Multi-threaded port scanning with common, custom, and comprehensive port ranges</p>
+                    <div class="tech-details">
+                        <span class="tech-tag">ThreadPoolExecutor</span>
+                        <span class="tech-tag">concurrent.futures</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <h3>Banner Grabbing</h3>
+                    <p>Service identification and banner grabbing for open ports with timeout handling</p>
+                    <div class="tech-details">
+                        <span class="tech-tag">socket.recv()</span>
+                        <span class="tech-tag">threading</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Vulnerability Assessment</h3>
+                    <p>Built-in vulnerability hints and security recommendations for discovered services</p>
+                    <div class="tech-details">
+                        <span class="tech-tag">Security Database</span>
+                        <span class="tech-tag">Pattern Matching</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Real-time Statistics</h3>
+                    <p>Live charts and graphs showing network topology and port distribution</p>
+                    <div class="tech-details">
+                        <span class="tech-tag">matplotlib</span>
+                        <span class="tech-tag">FigureCanvasTkAgg</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h3>Network Topology</h3>
+                    <p>Visual network topology mapping with interactive canvas display</p>
+                    <div class="tech-details">
+                        <span class="tech-tag">tkinter.Canvas</span>
+                        <span class="tech-tag">math</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>DNS Resolution</h3>
+                    <p>Reverse DNS lookup and NetBIOS name resolution for device identification</p>
+                    <div class="tech-details">
+                        <span class="tech-tag">subprocess</span>
+                        <span class="tech-tag">nbtstat</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-export"></i>
+                    </div>
+                    <h3>Export Capabilities</h3>
+                    <p>Export results to CSV, JSON, and other formats with comprehensive reporting</p>
+                    <div class="tech-details">
+                        <span class="tech-tag">csv</span>
+                        <span class="tech-tag">json</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Details Section -->
+    <section id="technical" class="technical">
+        <div class="container">
+            <h2>Technical Implementation</h2>
+            <div class="tech-grid">
+                <div class="tech-category">
+                    <h3><i class="fas fa-cogs"></i> Core Technologies</h3>
+                    <div class="tech-list">
+                        <div class="tech-item">
+                            <strong>Python 3.x</strong>
+                            <span>Main programming language</span>
+                        </div>
+                        <div class="tech-item">
+                            <strong>Tkinter</strong>
+                            <span>GUI framework with ttk styling</span>
+                        </div>
+                        <div class="tech-item">
+                            <strong>Threading</strong>
+                            <span>Multi-threaded scanning for performance</span>
+                        </div>
+                        <div class="tech-item">
+                            <strong>PyInstaller</strong>
+                            <span>Executable packaging and distribution</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3><i class="fas fa-network-wired"></i> Networking Libraries</h3>
+                    <div class="tech-list">
+                        <div class="tech-item">
+                            <strong>socket</strong>
+                            <span>Low-level network communication</span>
+                        </div>
+                        <div class="tech-item">
+                            <strong>ipaddress</strong>
+                            <span>IP address and network manipulation</span>
+                        </div>
+                        <div class="tech-item">
+                            <strong>subprocess</strong>
+                            <span>System command execution (ping, nbtstat)</span>
+                        </div>
+                        <div class="tech-item">
+                            <strong>concurrent.futures</strong>
+                            <span>ThreadPoolExecutor for parallel scanning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3><i class="fas fa-chart-line"></i> Data Visualization</h3>
+                    <div class="tech-list">
+                        <div class="tech-item">
+                            <strong>matplotlib</strong>
+                            <span>Statistical charts and graphs</span>
+                        </div>
+                        <div class="tech-item">
+                            <strong>FigureCanvasTkAgg</strong>
+                            <span>Matplotlib integration with Tkinter</span>
+                        </div>
+                        <div class="tech-item">
+                            <strong>Canvas</strong>
+                            <span>Custom network topology visualization</span>
+                        </div>
+                        <div class="tech-item">
+                            <strong>Collections</strong>
+                            <span>Counter and defaultdict for data analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3><i class="fas fa-database"></i> Data Management</h3>
+                    <div class="tech-list">
+                        <div class="tech-item">
+                            <strong>JSON</strong>
+                            <span>Configuration profiles and data storage</span>
+                        </div>
+                        <div class="tech-item">
+                            <strong>CSV</strong>
+                            <span>Export functionality for spreadsheet compatibility</span>
+                        </div>
+                        <div class="tech-item">
+                            <strong>Queue</strong>
+                            <span>Thread-safe communication between UI and workers</span>
+                        </div>
+                        <div class="tech-item">
+                            <strong>datetime</strong>
+                            <span>Timestamp logging and scan duration tracking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Architecture Section -->
+    <section class="architecture">
+        <div class="container">
+            <h2>System Architecture & Data Flow</h2>
+            <div class="architecture-content">
+                <div class="dfd-section">
+                    <h3><i class="fas fa-sitemap"></i> Data Flow Diagram</h3>
+                    <p>The following diagram illustrates the complete data flow and system architecture of LAN Scanner Pro, showing how different components interact and process network scanning data.</p>
+                    <div class="dfd-container">
+                        <img src="image.png" alt="LAN Scanner Pro Data Flow Diagram" class="dfd-image">
+                        <div class="dfd-description">
+                            <h4>System Components & Data Flow:</h4>
+                            <ul>
+                                <li><strong>User Interface Layer:</strong> Tkinter-based GUI for user interaction and configuration</li>
+                                <li><strong>Network Discovery Engine:</strong> Multi-threaded scanning with ThreadPoolExecutor</li>
+                                <li><strong>DNS Resolution Module:</strong> NetBIOS and reverse DNS lookup processes</li>
+                                <li><strong>Port Scanner:</strong> Socket-based port scanning with banner grabbing</li>
+                                <li><strong>Data Processing:</strong> Result aggregation and vulnerability assessment</li>
+                                <li><strong>Visualization Engine:</strong> Real-time charts and network topology display</li>
+                                <li><strong>Export System:</strong> CSV/JSON data export functionality</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Details -->
+    <section class="implementation">
+        <div class="container">
+            <h2>Key Implementation Features</h2>
+            <div class="implementation-grid">
+                <div class="impl-card">
+                    <h3><i class="fas fa-bolt"></i> Multi-threading Architecture</h3>
+                    <p>Uses ThreadPoolExecutor with configurable worker count (default 100) for concurrent port scanning across multiple hosts.</p>
+                    <div class="code-snippet">
+                        <code>ThreadPoolExecutor(max_workers=workers)</code>
+                    </div>
+                </div>
+
+                <div class="impl-card">
+                    <h3><i class="fas fa-eye"></i> Banner Grabbing Technique</h3>
+                    <p>Connects to open ports and attempts to read service banners with timeout handling for service identification.</p>
+                    <div class="code-snippet">
+                        <code>socket.recv(1024).decode('utf-8', errors='ignore')</code>
+                    </div>
+                </div>
+
+                <div class="impl-card">
+                    <h3><i class="fas fa-search-plus"></i> DNS Resolution Methods</h3>
+                    <p>Implements multiple DNS resolution techniques including reverse DNS and Windows NetBIOS name resolution.</p>
+                    <div class="code-snippet">
+                        <code>subprocess.run(['nbtstat', '-A', ip])</code>
+                    </div>
+                </div>
+
+                <div class="impl-card">
+                    <h3><i class="fas fa-shield-virus"></i> Vulnerability Database</h3>
+                    <p>Built-in vulnerability hints database with security recommendations for common services and ports.</p>
+                    <div class="code-snippet">
+                        <code>VULNERABILITY_HINTS = {22: "SSH - Check for weak passwords"}</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <h2>Application Interface</h2>
+            <div class="screenshot-grid">
+                <div class="screenshot-item">
+                    <img src="Screenshot 2025-11-19 230451.png" alt="Main Scanning Interface" class="screenshot-image">
+                    <div class="screenshot-info">
+                        <h4>Main Scanning Interface</h4>
+                        <p>Clean, modern UI with CIDR network configuration, port selection presets, and advanced scanning options including timeout and worker thread settings</p>
+                        <div class="screenshot-features">
+                            <span class="feature-tag">Network Configuration</span>
+                            <span class="feature-tag">Port Presets</span>
+                            <span class="feature-tag">Advanced Options</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="screenshot-item">
+                    <img src="Screenshot 2025-11-19 230559.png" alt="Scan Results Table" class="screenshot-image">
+                    <div class="screenshot-info">
+                        <h4>Device fingerprint</h4>
+                        <p>show devicetype,os hints and host information</p>
+                        <div class="screenshot-features">
+                            <span class="feature-tag">Search & Filter</span>
+                            <span class="feature-tag">Service Detection</span>
+                            <span class="feature-tag">Vulnerability Hints</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="screenshot-item">
+                    <img src="Screenshot 2025-11-19 230655.png" alt="Statistics Dashboard" class="screenshot-image">
+                    <div class="screenshot-info">
+                        <h4>Real-time Statistics Dashboard</h4>
+                        <p>Interactive charts and graphs displaying port distribution, host status, and network statistics with matplotlib integration</p>
+                        <div class="screenshot-features">
+                            <span class="feature-tag">Port Distribution</span>
+                            <span class="feature-tag">Host Status Charts</span>
+                            <span class="feature-tag">Live Statistics</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="screenshot-item">
+                    <img src="Screenshot 2025-11-19 230717.png" alt="Network Topology" class="screenshot-image">
+                    <div class="screenshot-info">
+                        <h4>Interactive Network Topology</h4>
+                        <p>Visual network mapping showing discovered devices, their connections, and network structure with interactive canvas display</p>
+                        <div class="screenshot-features">
+                            <span class="feature-tag">Visual Mapping</span>
+                            <span class="feature-tag">Device Connections</span>
+                            <span class="feature-tag">Interactive Canvas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional Features Section -->
+            <div class="additional-features">
+                <h3>Additional Capabilities</h3>
+                <div class="features-list">
+                    <div class="feature-highlight">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Real-time Progress Tracking</h4>
+                            <p>Live progress bars and status updates during network scanning operations</p>
+                        </div>
+                    </div>
+                    <div class="feature-highlight">
+                        <i class="fas fa-save"></i>
+                        <div>
+                            <h4>Configuration Profiles</h4>
+                            <p>Save and load custom scanning configurations for different network environments</p>
+                        </div>
+                    </div>
+                    <div class="feature-highlight">
+                        <i class="fas fa-palette"></i>
+                        <div>
+                            <h4>Theme Customization</h4>
+                            <p>Dark and light theme options for comfortable usage in different lighting conditions</p>
+                        </div>
+                    </div>
+                    <div class="feature-highlight">
+                        <i class="fas fa-history"></i>
+                        <div>
+                            <h4>Activity Logging</h4>
+                            <p>Comprehensive logging system with timestamps for all scanning activities and operations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-content">
+                <h2>Download LAN Scanner Pro</h2>
+                <p>Get the latest version of LAN Scanner Pro - a powerful network discovery and security assessment tool.</p>
+                
+                <div class="download-info">
+                    <div class="info-item">
+                        <i class="fas fa-laptop"></i>
+                        <span>Windows 10/11 Compatible</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-file-archive"></i>
+                        <span>Single Executable File</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-shield-check"></i>
+                        <span>No Installation Required</span>
+                    </div>
+                </div>
+
+                <div class="download-button-container">
+                    <a href="LAN_Scanner_Pro.exe" class="download-btn" download>
+                        <i class="fas fa-download"></i>
+                        <span>Download LAN Scanner Pro</span>
+                        <small>Version 1.0 - Windows Executable</small>
+                    </a>
+                </div>
+
+                <div class="system-requirements">
+                    <h3>System Requirements</h3>
+                    <ul>
+                        <li>Windows 10 or later</li>
+                        <li>Minimum 4GB RAM</li>
+                        <li>Network adapter</li>
+                        <li>Administrator privileges (recommended)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developer Section -->
+    <section class="developer">
+        <div class="container">
+            <div class="developer-content">
+                <h2>Developed By</h2>
+                <div class="developer-card">
+                    <div class="developer-avatar">
+                        <img src="vraj.jpg" alt="Vraj Maheshwari" class="developer-photo">
+                    </div>
+                    <div class="developer-info">
+                        <h3>Vraj Maheshwari</h3>
+                        <p>A passionate software developer experienced in network security, Python development, and GUI applications. Specialized in creating professional-grade network tools and security assessment utilities.</p>
+                        <div class="developer-contact">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:vrajmaheshwari06@gmail.com">vrajmaheshwari06@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fab fa-github"></i>
+                                <a href="https://github.com/vraj-maheshwari" target="_blank">GitHub Profile</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-globe"></i>
+                                <a href="https://vraj-maheshwari.github.io/portfolio" target="_blank">Portfolio Website</a>
+                            </div>
+                        </div>
+                        <div class="developer-skills">
+                            <span class="skill">Python</span>
+                            <span class="skill">Network Security</span>
+                            <span class="skill">GUI Development</span>
+                            <span class="skill">Threading</span>
+                            <span class="skill">Data Visualization</span>
+                            <span class="skill">PyInstaller</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>LAN Scanner Pro</h4>
+                    <p>Professional network discovery and security assessment tool built with Python and modern technologies.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Features</h4>
+                    <ul>
+                        <li>Network Discovery</li>
+                        <li>Port Scanning</li>
+                        <li>Banner Grabbing</li>
+                        <li>Vulnerability Assessment</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Technical</h4>
+                    <ul>
+                        <li>Multi-threaded Architecture</li>
+                        <li>Real-time Statistics</li>
+                        <li>Export Capabilities</li>
+                        <li>Modern GUI</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LAN Scanner Pro. Professional Network Security Tool.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
