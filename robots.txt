@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://vraj-maheshwari.github.io/Advanced_Lanscanner/sitemap.xml
